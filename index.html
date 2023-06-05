@@ -10,7 +10,9 @@
         <title>Vue Slider</title>
     </head>
     <body>
-        <script src="https://unpkg.com/vue@3"></script>
+        <script src="https://unpkg.com/vue@3">
+            // Vue CDN
+        </script>
             <div id="app">
 
 
@@ -34,8 +36,22 @@
                     </div>
                 </main>
 
+                <footer class="container d-flex">
+                    <div class="m-auto d-flex my_thumbnails-container">
+                        <div class="m-auto d-flex my_thumbnails">
+                            <img :src="items.src"
+                            v-for="(items, index) in imagesList"
+                            class="my_thumbnail"
+                            :class="activeIndex === index ? 'my_active-thumbnail' : ''"
+                            @click="activeIndex = index"
+                            alt="thumbnail"/>
+                        </div>
+                    </div>
+                </footer>
 
             </div>
-        <script src="script.js"></script>
+        <script src="script.js">
+            // JS File
+        </script>
     </body>
 </html>

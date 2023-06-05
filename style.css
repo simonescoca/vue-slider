@@ -5,7 +5,7 @@ body{
 }
 
 main{
-    padding-top: 8rem;
+    padding-top: 5rem;
 }
 
 .carousel{
@@ -61,4 +61,34 @@ main{
     bottom: 2rem;
     left: 4rem;
     width: 86%;
+}
+
+footer{
+    padding-top: 3rem;
+}
+
+.my_thumbnails-container{
+    width: 70%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.my_thumbnails{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.my_thumbnail{
+    width: 20%;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    filter: brightness(50%);
+}
+
+.my_active-thumbnail{
+    filter: brightness(1);
 }

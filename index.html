@@ -17,7 +17,7 @@
 
 
                 <main class="container d-flex">
-                    <div class="m-auto d-flex carousel">
+                    <div class="m-auto d-flex carousel" @mouseenter="stopAutoPlay" @mouseleave="autoPlay">
                         <div class="m-auto d-flex img-container">
                             <img :src="imagesList[activeIndex].src" class="image" alt="immagine che cicla">
                         </div>

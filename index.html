@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Vue Slider</title>
+    </head>
+    <body>
+        <script src="https://unpkg.com/vue@3"></script>
+            <div id="app">
+
+
+                <main class="container d-flex">
+                    <div class="m-auto d-flex carousel">
+                        <div class="m-auto d-flex img-container">
+                            <img :src="imagesList[activeIndex].src" class="image" alt="immagine che cicla">
+                        </div>
+                        <button type="button" class="btn btn-outline-dark my_button my_button-previous" @click="backButton">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark my_button my_button-next" @click="nextButton">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <h3 class="my_title">
+                            {{imagesList[activeIndex].title}}
+                        </h3>
+                        <p class="my_text">
+                            {{imagesList[activeIndex].text}}
+                        </p>
+                    </div>
+                </main>
+
+
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>
